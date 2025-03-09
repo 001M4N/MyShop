@@ -13,6 +13,10 @@ a{
     color: inherit;
 }
 
+.flex{
+    display: flex;
+}
+
 body{
     background-color: #F5F5F5;
 }
@@ -56,6 +60,21 @@ header{
 }
 .topic img{
     height: 25px;
+}
+
+@media only screen and (max-width:500px){
+    .cats{
+        display: none;
+    }
+    .hamburger-menu{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width:501px){
+    .hamburger-menu{
+        display: none;
+    }
 }
 
 .shop-title{
