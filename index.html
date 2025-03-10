@@ -9,43 +9,73 @@
 </head>
 <body dir="rtl">
     <header>
-        <div class="flex-row">
-            <div class="hamburger-menu">
-                <img src="assets/icons/hamburger-menu.svg">
-            </div>
-            <div class="shop-title">
-                <a href="/">
-                    <span>
-                        Iman Shop
-                    </span>
-                </a>
-            </div>
-        </div>
-        <div class="entries">
-            <div class="cats"> 
-                <div class="topic">
+        <div class="ham-menu-nav-bar">
+            <input type="checkbox" id="ham-menu-checkbox">
+            <label for="ham-menu-checkbox" class="ham-menu">&#9776;</label>
+
+            <nav class="flex-col navbar">
+                <div class="nav-item">
+                    <img src="./assets/icons/home.svg" alt="home">
+                    <span>خانه</span>
+                </div>
+                <div class="nav-item">
                     <img src="./assets/icons/products.svg" alt="products">
                     <span>محصولات</span>
                 </div>
-                <div class="topic">
-                    <img src="./assets/icons/list.svg" alt="lists">
-                    <span>دسته بندی</span>
+                <div class="nav-item">
+                    <img src="./assets/icons/service.svg" alt="service">
+                    <span>خدمات</span>
                 </div>
+                <div class="nav-item">
+                    <img src="./assets/icons/info.svg" alt="info">
+                    <span>درباره ما</span>
+                </div>
+                <div class="nav-item">
+                    <img src="./assets/icons/support.svg" alt="support">
+                    <span>تماس با ما</span>
+                </div>
+                <div class="nav-item">
+                    <img src="./assets/icons/faq.svg" alt="faq">
+                    <span>سوالات متداول</span>
+                </div>
+            </nav>
+        </div>
+        <div class="shop-title">
+            <a href="/">
+                <span>
+                    Iman Shop
+                </span>
+            </a>
+        </div>
+        <div class="cats"> 
+            <div class="topic">
+                <img src="./assets/icons/home.svg" alt="home">
+                <span>خانه</span>
             </div>
-            <div class="login">
-                <button>ورود</button>
+            <div class="topic">
+                <img src="./assets/icons/products.svg" alt="products">
+                <span>محصولات</span>
             </div>
+            <div class="topic">
+                <img src="./assets/icons/service.svg" alt="service">
+                <span>خدمات</span>
+            </div>
+            <div class="topic">
+                <img src="./assets/icons/info.svg" alt="info">
+                <span>درباره ما</span>
+            </div>
+            <div class="topic">
+                <img src="./assets/icons/support.svg" alt="support">
+                <span>تماس با ما</span>
+            </div>
+            <div class="topic">
+                <img src="./assets/icons/faq.svg" alt="faq">
+                <span>سوالات متداول</span>
+            </div>
+        </div>
+        <div class="login">
+            <button>ورود</button>
         </div>
     </header> 
-    <nav class="flex-col navbar">
-        <div class="flex-row nav-item">
-            <img src="./assets/icons/products.svg" alt="products">
-            <span>محصولات</span>
-        </div>
-        <div class="flex-row nav-item">
-            <img src="./assets/icons/list.svg" alt="lists">
-            <span>دسته بندی</span>
-        </div>
-    </nav>   
 </body>
 </html>

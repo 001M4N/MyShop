@@ -24,16 +24,26 @@ a{
     justify-content: top;
 }
 
-body{
+.justify-align-center{
+    justify-content: center;
+    align-items: center;
+}
+
+body, html{
     background-color: #F5F5F5;
+    height: 100%;
+    width: 100%;
 }
 
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: white;
     height: 64px;
+    font-weight: normal;
+    z-index: 100;
 }
 
 .entries{
@@ -45,8 +55,9 @@ header{
 
 .cats{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex: 0.8;
 }
 
 .topic{
@@ -55,6 +66,7 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .topic:hover{
@@ -62,32 +74,22 @@ header{
     transform: scale(1.2);
 }
 .topic span{
-    margin-right: 2px;
+    margin-right: 3px;
+    padding-top: 3px;
+    min-width: 150px;
 }
 .topic img{
-    height: 25px;
-}
-
-@media only screen and (max-width:500px){
-    .cats{
-        display: none;
-    }
-    .hamburger-menu{
-        margin-left: 10px;
-    }
-}
-
-@media only screen and (min-width:501px){
-    .hamburger-menu{
-        display: none;
-    }
+    height: 30px;
+    padding-bottom: 1px;
 }
 
 .shop-title{
     color: var(--organization-color);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     font-style: italic;
+    white-space: nowrap;
+    margin-left: 50px;
 }
 
 .login{
@@ -97,12 +99,13 @@ header{
 .login button{
     background-color: var(--organization-color);
     color: white;
-    width: 75px;
-    height: 33px;
+    width: 100px;
+    height: 40px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     margin-right: 10px;
+    margin-left: 20px;
     font-family: Vazirmatn, Arial, Helvetica, sans-serif;
 }
 
@@ -112,13 +115,60 @@ header{
 }
 
 .navbar{
-    margin: 10px;
+    display: none;
+    margin: 0px;
+    background-color: white;
+    width: 200px;
+    height: 100%;
 }
 
 .nav-item{
-    margin: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    transform: scale(1.2);
 }
 
 .nav-item span{
     margin-right: 10px;
+    font-size: 14px;
+}
+
+
+#ham-menu-checkbox{
+    display: none;
+}
+
+@media only screen and (max-width:1350px){
+    .cats{
+        display: none;
+    }
+
+    .ham-menu-nav-bar{
+        position: relative;
+    }
+
+    #ham-menu-checkbox:checked ~ .navbar{
+        display: flex;
+        position: absolute;
+        top: 64px;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .ham-menu{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width:1351px){
+    .ham-menu{
+        display: none;
+    }
 }
