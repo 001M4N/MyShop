@@ -6,6 +6,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Vazirmatn, Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -13,8 +14,14 @@ a{
     color: inherit;
 }
 
-.flex{
+.flex-row{
     display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
 }
 
 body{
@@ -34,7 +41,6 @@ header{
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
-    font-family: Vazirmatn, Arial, Helvetica, sans-serif;
 }
 
 .cats{
@@ -53,7 +59,7 @@ header{
 
 .topic:hover{
     opacity: 85%;
-    font-size: 15.5px;
+    transform: scale(1.2);
 }
 .topic span{
     margin-right: 2px;
@@ -103,4 +109,16 @@ header{
 .login button:hover{
     border: 2px var(--organization-color) solid;
     opacity: 90%;
+}
+
+.navbar{
+    margin: 10px;
+}
+
+.nav-item{
+    margin: 10px;
+}
+
+.nav-item span{
+    margin-right: 10px;
 }
