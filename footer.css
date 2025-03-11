@@ -6,6 +6,8 @@ body{
     position: relative;
 }
 
+
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -36,14 +38,19 @@ footer{
     margin-right: 100px;
 }
 
+.footer-box-3{
+    flex: 0.4;
+}
+
 .footer-box-3 input{
-    width: 400px;
+    flex: 2;
     border: 0.5px solid black;
     border-radius: 15px;
     padding: 10px;
     margin-left: 5px;
     font-size: 15px;
     height: 50px;
+    min-width: 100px;
 }
 .footer-box-3 input::placeholder{
     opacity: 60%;
@@ -72,6 +79,7 @@ footer{
 
 .footer-box-1 span, .footer-box-2 span{
     margin: 5px;
+    white-space: nowrap;
 }
 
 .footer-box-1 span:hover, .footer-box-2 span:hover{
@@ -79,7 +87,11 @@ footer{
     font-weight: bold;
 }
 
-.footer-box-3 > span{
+.footer-box-3 span{
     display: block;
     margin-bottom: 12px;
+}
+
+.footer-links{
+    margin: 15px;
 }
