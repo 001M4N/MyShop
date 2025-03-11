@@ -1,0 +1,85 @@
+:root{
+    --organization-color: #0c5c1cc7;
+}
+
+body{
+    position: relative;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.just_space-around{
+    justify-content: space-around;
+}
+.just_center{
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(165, 164, 164);
+    padding: 20px 100px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+}
+
+.footer-box-2{
+    margin-right: 100px;
+}
+
+.footer-box-3 input{
+    width: 400px;
+    border: 0.5px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 15px;
+    height: 50px;
+}
+.footer-box-3 input::placeholder{
+    opacity: 60%;
+    font-size: 15px;
+}
+
+.footer-box-3 button{
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    margin-right: 7px;
+    border: 0.5px solid black;
+    font-size: 15px;
+    color: white;
+    background-color: var(--organization-color);
+}
+
+.footer-box-3 button:hover{
+    border: 1.5px solid gray;
+    opacity: 90%;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.footer-box-1 span, .footer-box-2 span{
+    margin: 5px;
+}
+
+.footer-box-1 span:hover, .footer-box-2 span:hover{
+    color: var(--organization-color);
+    font-weight: bold;
+}
+
+.footer-box-3 > span{
+    display: block;
+    margin-bottom: 12px;
+}
