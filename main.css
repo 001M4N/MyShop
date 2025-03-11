@@ -115,11 +115,13 @@ header{
 }
 
 .navbar{
-    display: none;
     margin: 0px;
     background-color: white;
     width: 200px;
     height: 100%;
+    position: fixed;
+    right: -100%;
+    transition: all 0.3s;
 }
 
 .nav-item{
@@ -144,31 +146,26 @@ header{
     display: none;
 }
 
+.ham-menu{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+#ham-menu-checkbox:checked ~ .navbar{
+    right: 0;
+}
+
 @media only screen and (max-width:1350px){
     .cats{
         display: none;
-    }
-
-    .ham-menu-nav-bar{
-        position: relative;
-    }
-
-    #ham-menu-checkbox:checked ~ .navbar{
-        display: flex;
-        position: absolute;
-        top: 64px;
-        bottom: 0;
-        right: 0;
-    }
-    
-    .ham-menu{
-        font-size: 30px;
-        margin-left: 20px;
     }
 }
 
 @media only screen and (min-width:1351px){
     .ham-menu{
+        display: none;
+    }
+    .navbar{
         display: none;
     }
 }
