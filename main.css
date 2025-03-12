@@ -27,9 +27,9 @@ main{
 }
 
 .products{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 
@@ -89,11 +89,7 @@ main{
         display: block;
         width: 100%;
     }
-
-    .products{
-        grid-template-columns: 1fr 1fr;
-    }
-
+    
     .product{
         height: 250px;
         width: 250px;
