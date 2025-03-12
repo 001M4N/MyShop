@@ -1,0 +1,27 @@
+main{
+    flex-grow: 1;
+}
+
+
+
+@media only screen and (max-width:1350px){
+    .banner{
+        display: none;
+    }
+
+    .banner-responsive{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:1351px){
+    .banner{
+        display: block;
+        width: 100%;
+    }
+
+    .banner-responsive{
+        display: none;
+    }
+}
