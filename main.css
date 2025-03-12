@@ -35,8 +35,8 @@ main{
 
 .product{
     margin: 10px;
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
