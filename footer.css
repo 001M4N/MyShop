@@ -6,8 +6,6 @@ body{
     position: relative;
 }
 
-
-
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -23,6 +21,10 @@ body{
 }
 .just_center{
     justify-content: center;
+}
+
+.align-center{
+    align-items: center;
 }
 
 footer{
@@ -52,6 +54,7 @@ footer{
     height: 50px;
     min-width: 100px;
 }
+
 .footer-box-3 input::placeholder{
     opacity: 60%;
     font-size: 15px;
@@ -69,7 +72,7 @@ footer{
 }
 
 .footer-box-3 button:hover{
-    border: 1.5px solid gray;
+    border: 1.5px solid var(--organization-color);
     opacity: 90%;
 }
 
@@ -80,6 +83,7 @@ footer{
 .footer-box-1 span, .footer-box-2 span{
     margin: 5px;
     white-space: nowrap;
+    height: 100%;
 }
 
 .footer-box-1 span:hover, .footer-box-2 span:hover{
@@ -94,4 +98,18 @@ footer{
 
 .footer-links{
     margin: 15px;
+}
+
+.subs-email{
+    width: 100%;
+}
+
+@media only screen and (max-width:1351px){
+    footer{
+        height: 200px;
+        padding: 10px;
+    }
+    .footer-box-2, .footer-box-3{
+        margin-right: 40px;
+    }
 }
