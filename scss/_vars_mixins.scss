@@ -1,5 +1,5 @@
 $organization-color: #0c5c1cc7;
-
+$alert-color: #ff9800;
 @mixin title($is_form_title){
     @if $is_form_title == 'true'{
         color: $organization-color;
