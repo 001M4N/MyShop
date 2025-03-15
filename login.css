@@ -1,0 +1,82 @@
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgba(12, 92, 28, 0.7803921569);
+  font-size: 35px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 10px;
+}
+
+.log-sign-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 25%;
+  height: 400px;
+  background-color: rgba(12, 92, 28, 0.7803921569);
+  border-radius: 20px;
+  padding: 5px 20px;
+  min-width: 300px;
+}
+.log-sign-form .username, .log-sign-form .email, .log-sign-form .password {
+  display: flex;
+  flex-direction: column;
+}
+.log-sign-form .username input, .log-sign-form .email input, .log-sign-form .password input {
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  direction: ltr;
+  padding: 10px;
+}
+.log-sign-form .username input:hover, .log-sign-form .username input:focus, .log-sign-form .email input:hover, .log-sign-form .email input:focus, .log-sign-form .password input:hover, .log-sign-form .password input:focus {
+  opacity: 80%;
+  border: 1px solid black;
+}
+.log-sign-form .username input::-moz-placeholder, .log-sign-form .email input::-moz-placeholder, .log-sign-form .password input::-moz-placeholder {
+  opacity: 60%;
+}
+.log-sign-form .username input::placeholder, .log-sign-form .email input::placeholder, .log-sign-form .password input::placeholder {
+  opacity: 60%;
+}
+.log-sign-form .username span, .log-sign-form .email span, .log-sign-form .password span {
+  color: white;
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+.log-sign-form .submit {
+  margin-top: 20px;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+  background-color: rgba(12, 92, 28, 0.7803921569);
+  border: 1.5px solid white;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+.log-sign-form .submit:hover {
+  opacity: 80%;
+}
+.log-sign-form .submit:active {
+  opacity: 70%;
+}
+
+.login-link {
+  margin-top: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  color: rgba(12, 92, 28, 0.7803921569);
+  text-decoration: none;
+}

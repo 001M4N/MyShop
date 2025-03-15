@@ -1,0 +1,83 @@
+@import 'vars_mixins';
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    @include title($is_form_title: 'true');
+}
+
+.log-sign-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25%;
+    height: 400px;
+    background-color: $organization-color;
+    border-radius: 20px;
+    padding: 5px 20px;
+    min-width: 300px;
+
+    .username, .email, .password{
+        display: flex;
+        flex-direction: column;
+        input{
+            height: 40px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            font-size: 17px;
+            direction: ltr;
+            padding: 10px;
+
+            &:hover, &:focus{
+                opacity: 80%;
+                border: 1px solid black;
+            }
+
+            &::placeholder{
+                opacity: 60%;
+            }
+        }
+        span{
+            color: white;
+            margin-bottom: 7px;
+            font-size: 17px;
+        }
+    }
+
+    .submit{
+        margin-top: 20px;
+        height: 40px;
+        background-color: white;
+        border-radius: 20px;
+        background-color: $organization-color;
+        border: 1.5px solid white;
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 80%;
+        }
+
+        &:active{
+            opacity: 70%;
+        }
+    }
+}
+
+.login-link{
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    color: $organization-color;
+    text-decoration: none;
+}
