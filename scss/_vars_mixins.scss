@@ -1,0 +1,11 @@
+$organization-color: #0c5c1cc7;
+
+@mixin title($is_form_title){
+    @if $is_form_title == 'true'{
+        color: $organization-color;
+        font-size: 35px;
+        font-weight: bold;
+        font-style: italic;
+        margin: 10px;
+    }
+}
