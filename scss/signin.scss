@@ -26,7 +26,7 @@ h1{
     min-width: 300px;
 
     .username, .email, .password{
-        @include login_signin_fields;
+        @include forms_fields;
     }
 
     .submit{

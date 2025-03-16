@@ -26,42 +26,14 @@ h1{
     min-width: 300px;
 
     .username, .email, .password{
-        @include login_signin_fields;
+        @include forms_fields;
     }
 
     .submit{
-        margin-top: 20px;
-        height: 40px;
-        background-color: white;
-        border-radius: 20px;
-        background-color: $organization-color;
-        border: 1.5px solid white;
-        color: white;
-        font-size: 17px;
-        cursor: pointer;
-
-        &:hover{
-            opacity: 80%;
-        }
-
-        &:active{
-            opacity: 70%;
-        }
+        @include forms_butt($bg-color: $organization-color);
     }
     .pass-forget{
-        margin: 10px 0px;
-        white-space: nowrap;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
-        color: white;
-        background-color: $alert-color;
-        padding: 6px 9px;
-        border-radius: 15px;
-        border: 1px solid white;
-        &:hover{
-            opacity: 90%;
-        }
+        @include forms_butt($bg-color: $alert-color);
     }
 }
 

@@ -73,19 +73,21 @@ h1 {
   opacity: 70%;
 }
 .log-sign-form .pass-forget {
-  margin: 10px 0px;
-  white-space: nowrap;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  color: white;
+  margin-top: 20px;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
   background-color: #ff9800;
-  padding: 6px 9px;
-  border-radius: 15px;
-  border: 1px solid white;
+  border: 1.5px solid white;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
 }
 .log-sign-form .pass-forget:hover {
-  opacity: 90%;
+  opacity: 80%;
+}
+.log-sign-form .pass-forget:active {
+  opacity: 70%;
 }
 
 .signin-link {

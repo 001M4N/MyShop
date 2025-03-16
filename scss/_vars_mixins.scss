@@ -10,7 +10,7 @@ $alert-color: #ff9800;
     }
 }
 
-@mixin login_signin_fields{
+@mixin forms_fields{
     display: flex;
     flex-direction: column;
     input{
@@ -35,5 +35,25 @@ $alert-color: #ff9800;
         color: white;
         margin-bottom: 7px;
         font-size: 17px;
+    }
+}
+
+@mixin forms_butt($bg-color){
+    margin-top: 20px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    background-color: $bg-color;
+    border: 1.5px solid white;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 80%;
+    }
+
+    &:active{
+        opacity: 70%;
     }
 }
