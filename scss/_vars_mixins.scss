@@ -9,3 +9,31 @@ $alert-color: #ff9800;
         margin: 10px;
     }
 }
+
+@mixin login_signin_fields{
+    display: flex;
+    flex-direction: column;
+    input{
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        font-size: 17px;
+        direction: ltr;
+        padding: 10px;
+
+        &:hover, &:focus{
+            opacity: 80%;
+            border: 1px solid black;
+        }
+
+        &::placeholder{
+            opacity: 60%;
+        }
+    }
+    span{
+        color: white;
+        margin-bottom: 7px;
+        font-size: 17px;
+    }
+}
