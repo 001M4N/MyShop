@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+        tailwind.config = {
+            theme:{
+                extend:{
+                    colors:{
+                        organizationColor: '#0c5c1cc7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body dir="rtl">
+    <main>
+
+        <div class="flex flex-col">
+            <div class="flex border p-[10px] m-[5px] rounded-[5px]">
+                <img class="w-1/3 sm:w-xs border border-gray-300 rounded p-[15px] hover:scale" src="assets/products/mouse.webp" alt="محصول">
+                <div class="flex flex-col flex-2 mr-[15px] text-xs">
+                    <span class="">موس اپل مدل جدید</span>
+                    <div class="grid grid-cols-2 gap-1 mt-[10px]">
+                        <span class="col-span-2">10 عدد موجود در انبار</span>
+                        <span class="col-span-2">5ستاره</span>
+                        <span>تعداد: 1</span>
+                        <span>انتخاب تعداد</span>
+                        <span>رنگ</span>
+                        <span>پالت رنگ</span>
+                        <span>قیمت قبل تخفیف</span>
+                        <span>قیمت بعد از تخفیف</span>
+                    </div>
+                    <button class="bg-organizationColor">
+                        افزودن
+                    </button>
+                </div>
+            </div>
+            <div class="border rounded p-[10px] m-[5px]">
+                جزئیات
+            </div>
+        </div>
+
+        <!-- <div class="flex m-[20px]">
+            <img src="assets/products/mac.jpg" alt="محصول" class="object-fill p-[5px]">
+            <div class="flex flex-col">
+                <span>مک بوک جدید  کمپانی اپل</span>
+                <div>
+
+                </div>
+                <div>
+                    <span>موجود در انبار:</span>
+                    <span>11 عدد</span>
+                </div>
+                <div>
+                    <span>تعداد: 1</span>
+                    <span>انتخاب تعداد</span>
+                </div>
+                <div>
+                    ۴۶۰۰۰۰
+                </div>
+                <div>
+                    ۲۳۰۰۰۰
+                </div>
+
+                <button>
+                    ثبت سفارش
+                </button>
+            </div>
+
+            <div class="">
+                <span>ویژگی های محصول</span>
+            </div>
+        </div> -->
+
+    </main>
+
+</body>
+</html>
