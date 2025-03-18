@@ -54,6 +54,8 @@ footer{
     font-size: 15px;
     height: 50px;
     min-width: 100px;
+    background-color: white;
+    color: black;
 }
 
 .footer-box-3 input::placeholder{
