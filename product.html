@@ -4,25 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link href="header.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script>
-        tailwind.config = {
-            theme:{
-                extend:{
-                    colors:{
-                        organizationColor: '#0c5c1cc7'
-                    }
-                }
-            }
-        }
-    </script>
 </head>
-<body dir="rtl">
-    <main>
 
+<body dir="rtl" class="flex font-Vazirmatn">
+    
+    <!-- header -->
+    <header>
+        <div class="ham-menu-nav-bar">
+            <input type="checkbox" id="ham-menu-checkbox">
+            <label for="ham-menu-checkbox" class="ham-menu">&#9776;</label>
+
+            <nav class="flex-col navbar">
+                <div class="nav-item">
+                    <img src="./assets/icons/home.svg" alt="home">
+                    <span>خانه</span>
+                </div>
+                <div class="nav-item">
+                    <img src="./assets/icons/products.svg" alt="products">
+                    <span>محصولات</span>
+                </div>
+                <div class="nav-item">
+                    <img src="./assets/icons/service.svg" alt="service">
+                    <span>خدمات</span>
+                </div>
+                <div class="nav-item">
+                    <img src="./assets/icons/info.svg" alt="info">
+                    <span>درباره ما</span>
+                </div>
+                <div class="nav-item">
+                    <img src="./assets/icons/support.svg" alt="support">
+                    <span>تماس با ما</span>
+                </div>
+                <div class="nav-item">
+                    <img src="./assets/icons/faq.svg" alt="faq">
+                    <span>سوالات متداول</span>
+                </div>
+            </nav>
+        </div>
+        <div class="shop-title">
+            <a href="/">
+                <span>
+                    DigiShop
+                </span>
+            </a>
+        </div>
+        <div class="cats"> 
+            <div class="topic">
+                <img src="./assets/icons/home.svg" alt="home">
+                <span>خانه</span>
+            </div>
+            <div class="topic">
+                <img src="./assets/icons/products.svg" alt="products">
+                <span>محصولات</span>
+            </div>
+            <div class="topic">
+                <img src="./assets/icons/service.svg" alt="service">
+                <span>خدمات</span>
+            </div>
+            <div class="topic">
+                <img src="./assets/icons/info.svg" alt="info">
+                <span>درباره ما</span>
+            </div>
+            <div class="topic">
+                <img src="./assets/icons/support.svg" alt="support">
+                <span>تماس با ما</span>
+            </div>
+            <div class="topic">
+                <img src="./assets/icons/faq.svg" alt="faq">
+                <span>سوالات متداول</span>
+            </div>
+        </div>
+        <div class="login">
+            <button>
+                <a href="/login.html">ورود</a>
+            </button>
+        </div>
+    </header>
+
+     <!-- main -->
+    <main class="flex flex-grow-1 text-sm">
+        <!-- the product page panel -->
+        <div class="flex flex-col w-full">
+            <div class="flex gap-x-[20px] mt-[20px]">
+                <div class="w-2xs">
+                    <img src="assets/products/mac.jpg" alt="محصول">
+                </div>
+                <div class="flex flex-col">
+                    <span>مک بوک جدید اپل</span>
+                    <div class="grid grid-cols-2">
+                        <span class="col-span-2">10 عدد موجود در انبار</span>
+                        <span class="col-span-2">5 ستاره</span>
+                        <span>تعداد: 1</span>
+                        <span>انتخاب تعداد</span>
+                        <span>رنگ</span>
+                        <span>پالت رنگ</span>
+                        <span>قیمت قبل تخفیف</span>
+                        <span>قیمت بعد از تخفیف</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button>
+                    افزدون
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- <main class="flex-grow-1">
         <div class="flex flex-col">
             <div class="flex border p-[10px] m-[5px] rounded-[5px]">
-                <img class="w-1/3 sm:w-xs border border-gray-300 rounded p-[15px] hover:scale" src="assets/products/mouse.webp" alt="محصول">
+                <img 
+                    class="w-1/3 sm:w-xs border border-gray-300 rounded p-[15px]"
+                    src="assets/products/mouse.webp"
+                    alt="محصول"
+                >
                 <div class="flex flex-col flex-2 mr-[15px] text-xs">
                     <span class="">موس اپل مدل جدید</span>
                     <div class="grid grid-cols-2 gap-1 mt-[10px]">
@@ -42,42 +142,31 @@
             </div>
             <div class="border rounded p-[10px] m-[5px]">
                 جزئیات
-            </div>
+            </div> -->
         </div>
 
-        <!-- <div class="flex m-[20px]">
-            <img src="assets/products/mac.jpg" alt="محصول" class="object-fill p-[5px]">
-            <div class="flex flex-col">
-                <span>مک بوک جدید  کمپانی اپل</span>
-                <div>
-
-                </div>
-                <div>
-                    <span>موجود در انبار:</span>
-                    <span>11 عدد</span>
-                </div>
-                <div>
-                    <span>تعداد: 1</span>
-                    <span>انتخاب تعداد</span>
-                </div>
-                <div>
-                    ۴۶۰۰۰۰
-                </div>
-                <div>
-                    ۲۳۰۰۰۰
-                </div>
-
-                <button>
-                    ثبت سفارش
-                </button>
+    <!-- footer -->
+    <footer class="just_space-around align-center">
+        <div class="flex-row footer-links">
+            <div class="footer-box-1 flex-col">
+                <span class="cursor-pointer">خانه</span>
+                <span class="cursor-pointer">محصولات</span>
+                <span class="cursor-pointer">خدمات</span>
             </div>
-
-            <div class="">
-                <span>ویژگی های محصول</span>
+            <div class="footer-box-2 flex-col">
+                <span class="cursor-pointer">درباره ما</span>
+                <span class="cursor-pointer">تماس با ما</span>
+                <span class="cursor-pointer">سوالات متداول</span>
             </div>
-        </div> -->
-
-    </main>
+        </div>
+        <div class="footer-box-3">
+            <span>عضویت در خبرنامه:</span>
+            <div class="flex-row">
+                <input type="text" placeholder="example@example.com" dir="ltr">
+                <button class="cursor-pointer">ثبت</button>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
